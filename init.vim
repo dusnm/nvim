@@ -20,7 +20,7 @@ source $HOME/.config/nvim/plugins.vim
 " Source plugin settings
 source $HOME/.config/nvim/plugin-config/startify.vim
 source $HOME/.config/nvim/plugin-config/nerd-tree.vim
-source $HOME/.config/nvim/plugin-config/ranger.vim
+source $HOME/.config/nvim/plugin-config/lf.vim
 source $HOME/.config/nvim/plugin-config/airline.vim
 source $HOME/.config/nvim/plugin-config/nerd-commenter.vim
 source $HOME/.config/nvim/plugin-config/prettier.vim
@@ -29,4 +29,4 @@ source $HOME/.config/nvim/plugin-config/goyo.vim
 source $HOME/.config/nvim/plugin-config/vim-table-mode.vim
 
 " Source active theme
-source $HOME/.config/nvim/themes/gruvbox.vim
+source $HOME/.config/nvim/themes/dracula.vim
