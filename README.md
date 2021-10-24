@@ -1,4 +1,5 @@
- _   _                 _           
+```
+_   _                 _           
 | \ | | ___  _____   _(_)_ __ ___  
 |  \| |/ _ \/ _ \ \ / / | '_ ` _ \ 
 | |\  |  __/ (_) \ V /| | | | | | |
@@ -7,6 +8,7 @@
 Version: 0.1.0
 Maintainer: Dušan Mitrović
 repository: https://github.com/dusnm/nvim.git
+```
 
 ## Requirements
 * neovim >= 0.5
