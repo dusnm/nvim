@@ -45,4 +45,5 @@ sudo npm i -g pyright \
 
 ## Licensing
 This configuration is free software.
+
 All source code is licensed under GNU GPL, either version 3 of the license or, at your option, any later version.
