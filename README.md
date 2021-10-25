@@ -36,85 +36,48 @@ Default Keybindings. Take note the `<leader>` key is by default set to `,`;
 
 ### General
 
-|------------|-----------------------------------|--------|
 | keybinding | description                       | mode   |
-|------------|-----------------------------------|--------|
 | <leader>c  | clear search highlights           | normal |
-|------------|-----------------------------------|--------|
 | <leader>q  | quit all windows/buffers and exit | normal |
-|------------|-----------------------------------|--------|
 | <leader>o  | spawn integrated terminal         | normal |
-|------------|-----------------------------------|--------|
 | <leader>tm | toggle table mode                 | normal |
-|------------|-----------------------------------|--------|
 
 ### Splits
 
-|--------------|---------------------------------------|--------|
 | keybinding   | description                           | mode   |
-|--------------|---------------------------------------|--------|
 | <leader>v    | vertical split                        | normal |
-|--------------|---------------------------------------|--------|
 | <leader>h    | horizontal split                      | normal |
-|--------------|---------------------------------------|--------|
 | Ctrl + h     | move to the left split                | normal |
-|--------------|---------------------------------------|--------|
 | Ctrl + j     | move to the bottom split              | normal |
-|--------------|---------------------------------------|--------|
 | Ctrl + k     | move to the top split                 | normal |
-|--------------|---------------------------------------|--------|
 | Ctrl + l     | move to the right split               | normal |
-|--------------|---------------------------------------|--------|
 | Ctrl + Left  | resize vertical split to the left     | normal |
-|--------------|---------------------------------------|--------|
 | Ctrl + Right | resize vertical split to the right    | normal |
-|--------------|---------------------------------------|--------|
 | Ctrl + Up    | resize horizontal split to the top    | normal |
-|--------------|---------------------------------------|--------|
 | Ctrl + Down  | resize horizontal split to the bottom | normal |
-|--------------|---------------------------------------|--------|
 
 ### LSP
 
-|------------|-------------------------------|--------|
 | keybinding | description                   | mode   |
-|------------|-------------------------------|--------|
 | <leader>gd | go to definition              | normal |
-|------------|-------------------------------|--------|
 | <leader>gD | go to declaration             | normal |
-|------------|-------------------------------|--------|
 | <leader>gr | find all references           | normal |
-|------------|-------------------------------|--------|
 | <leader>gi | go to implementation          | normal |
-|------------|-------------------------------|--------|
 | <leader>gh | spawn hover menu              | normal |
-|------------|-------------------------------|--------|
 | <leader>gs | display signature information | normal |
-|------------|-------------------------------|--------|
 | <leader>gn | Move to next diagnostic       | normal |
-|------------|-------------------------------|--------|
 | <leader>gp | Move to previous diagnostic   | normal |
-|------------|-------------------------------|--------|
 
 ### Completion
 
-|--------------|-----------------------------|--------|
 | keybinding   | description                 | mode   |
-|--------------|-----------------------------|--------|
 | Ctrl + d     | Scroll docs down            | insert |
-|--------------|-----------------------------|--------|
 | Ctrl + f     | Scroll docs up              | insert |
-|--------------|-----------------------------|--------|
 | Ctrl + p     | Move to previous completion | insert |
-|--------------|-----------------------------|--------|
 | Ctrl + n     | Move to next completion     | insert |
-|--------------|-----------------------------|--------|
 | Ctrl + Space | Activate completion         | insert |
-|--------------|-----------------------------|--------|
 | Ctrl + e     | Close completion menu       | insert |
-|--------------|-----------------------------|--------|
 | Return       | Confirm selection           | insert |
-|--------------|-----------------------------|--------|
 
 
 ## Licensing
