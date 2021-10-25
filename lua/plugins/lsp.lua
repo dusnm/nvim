@@ -10,14 +10,20 @@ default_capabilities
   .completionItem
   .snippetSupport = true
 
-local capabilities = require('cmp_nvim_lsp').update_capabilities(default_capabilities) 
+local capabilities = require('cmp_nvim_lsp').update_capabilities(default_capabilities)
+local servers = {
+  'tsserver',
+  'pyright',
+  'bashls',
+  'eslint',
+  'html',
+  'cssls',
+  'jsonls',
+  'dockerls',
+  'yamlls',
+  'intelephense',
+}
 
-lsp.tsserver.setup({ capabilities = capabilities })
-lsp.pyright.setup({ capabilities = capabilities })
-lsp.bashls.setup({ capabilities = capabilities })
-lsp.eslint.setup({ capabilities = capabilities})
-lsp.html.setup({ capabilities = capabilities })
-lsp.cssls.setup({ capabilities = capabilities })
-lsp.jsonls.setup({ capabilities = capabilities })
-lsp.dockerls.setup({ capabilities = capabilities })
-lsp.intelephense.setup({ capabilities = capabilities })
+for _, server in ipairs(servers) do
+  lsp[server].setup({ capabilities = capabilities })
+end

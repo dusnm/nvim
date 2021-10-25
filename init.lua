@@ -6,7 +6,7 @@
 | |\  |  __/ (_) \ V /| | | | | | |
 |_| \_|\___|\___/ \_/ |_|_| |_| |_|
 
-Version: 0.1.2
+Version: 0.1.3
 Maintainer: dusnm
 Repository: https://github.com/dusnm/nvim.git
 License: GPL-3.0-or-later

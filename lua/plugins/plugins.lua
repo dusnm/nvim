@@ -43,6 +43,7 @@ return require('packer').startup(function(use)
     'francoiscabrol/ranger.vim',     -- ranger file manager integration
     requires = {'rbgrouleff/bclose.vim'}
   }
+  use 'dhruvasagar/vim-table-mode'   -- quickly draw markdown tables
 
   if packer_bootstrap then
     require('packer').sync()
