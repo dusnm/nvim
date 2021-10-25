@@ -5,7 +5,7 @@ _   _                 _
 | |\  |  __/ (_) \ V /| | | | | | |
 |_| \_|\___|\___/ \_/ |_|_| |_| |_|
 
-Version: 0.1.1
+Version: 0.1.2
 Maintainer: Dušan Mitrović
 repository: https://github.com/dusnm/nvim.git
 ```

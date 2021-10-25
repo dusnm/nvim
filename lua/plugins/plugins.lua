@@ -13,9 +13,10 @@ local fn = vim.fn   -- execute vim functions
 -------------
 local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 local packer_repository = 'https://github.com/wbthomason/packer.nvim'
+local packer_bootstrap = nil
 
 if fn.empty(fn.glob(install_path)) > 0 then
-  local packer_bootstrap = fn.system({
+  packer_bootstrap = fn.system({
     'git', 'clone', '--depth', '1', packer_repository, install_path
   })
 end
