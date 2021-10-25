@@ -5,7 +5,7 @@ _   _                 _
 | |\  |  __/ (_) \ V /| | | | | | |
 |_| \_|\___|\___/ \_/ |_|_| |_| |_|
 
-Version: 0.1.0
+Version: 0.1.1
 Maintainer: Dušan Mitrović
 repository: https://github.com/dusnm/nvim.git
 ```
@@ -30,19 +30,6 @@ sudo npm i -g pyright \
               dockerfile-language-server-nodejs \
               intelephense
 ```
-
-## Install nvim plugins
-1. Install packer
-    ```
-    git clone --depth 1 \ 
-                https://github.com/wbthomason/packer.nvim \
-                ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-    ```
-2. Run nvim command
-   ```
-   :PackerInstall
-   ```
-
 ## Licensing
 This configuration is free software.
 

@@ -6,11 +6,21 @@
 -- API Aliases --
 -----------------
 local cmd = vim.cmd -- execute vim commands
+local fn = vim.fn   -- execute vim functions
 
 -------------
 -- Plugins --
 -------------
-return require('packer').startup(function()
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+local packer_repository = 'https://github.com/wbthomason/packer.nvim'
+
+if fn.empty(fn.glob(install_path)) > 0 then
+  local packer_bootstrap = fn.system({
+    'git', 'clone', '--depth', '1', packer_repository, install_path
+  })
+end
+
+return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'       -- packer manages itself
   use 'famiu/feline.nvim'            -- statusline for neovim
   use { 
@@ -32,4 +42,8 @@ return require('packer').startup(function()
     'francoiscabrol/ranger.vim',     -- ranger file manager integration
     requires = {'rbgrouleff/bclose.vim'}
   }
+
+  if packer_bootstrap then
+    require('packer').sync()
+  end
 end)

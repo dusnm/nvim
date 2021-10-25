@@ -55,7 +55,11 @@ cmd [[
 ------------
 opt.termguicolors = true -- enable 24-bit color support
 opt.background = 'dark'  -- set the default colorscheme variant to dark
-cmd [[colorscheme gruvbox]]
+
+local gruvbox_install_path = fn.stdpath('data')..'/site/pack/packer/start/gruvbox.nvim'
+if fn.empty(fn.glob(gruvbox_install_path)) == 0 then
+  cmd [[colorscheme gruvbox]]
+end
 
 -------------------------
 -- Integrated Terminal --
