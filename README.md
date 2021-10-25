@@ -32,7 +32,7 @@ sudo npm i -g pyright \
               intelephense
 ```
 ## Keybindings
-Default Keybindings. Take note the `<leader>` key is by default set to `,`;
+Default Keybindings. Take note the `<leader>` key is by default set to `,`
 
 ### General
 
