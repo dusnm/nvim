@@ -38,6 +38,7 @@ Default Keybindings. Take note the `<leader>` key is by default set to `,`
 
 | keybinding       | description                       | mode   |
 |------------------|-----------------------------------|--------|
+| &lt;leader&gt;f  | launch ranger                     | normal |
 | &lt;leader&gt;c  | clear search highlights           | normal |
 | &lt;leader&gt;q  | quit all windows/buffers and exit | normal |
 | &lt;leader&gt;o  | spawn integrated terminal         | normal |
