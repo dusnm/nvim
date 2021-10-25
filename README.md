@@ -37,6 +37,7 @@ Default Keybindings. Take note the `<leader>` key is by default set to `,`;
 ### General
 
 | keybinding | description                       | mode   |
+|------------|-----------------------------------|--------|
 | <leader>c  | clear search highlights           | normal |
 | <leader>q  | quit all windows/buffers and exit | normal |
 | <leader>o  | spawn integrated terminal         | normal |
@@ -45,6 +46,7 @@ Default Keybindings. Take note the `<leader>` key is by default set to `,`;
 ### Splits
 
 | keybinding   | description                           | mode   |
+|--------------|---------------------------------------|--------|
 | <leader>v    | vertical split                        | normal |
 | <leader>h    | horizontal split                      | normal |
 | Ctrl + h     | move to the left split                | normal |
@@ -59,6 +61,7 @@ Default Keybindings. Take note the `<leader>` key is by default set to `,`;
 ### LSP
 
 | keybinding | description                   | mode   |
+|------------|-------------------------------|--------|
 | <leader>gd | go to definition              | normal |
 | <leader>gD | go to declaration             | normal |
 | <leader>gr | find all references           | normal |
@@ -71,6 +74,7 @@ Default Keybindings. Take note the `<leader>` key is by default set to `,`;
 ### Completion
 
 | keybinding   | description                 | mode   |
+|--------------|-----------------------------|--------|
 | Ctrl + d     | Scroll docs down            | insert |
 | Ctrl + f     | Scroll docs up              | insert |
 | Ctrl + p     | Move to previous completion | insert |
