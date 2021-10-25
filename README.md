@@ -36,40 +36,40 @@ Default Keybindings. Take note the `<leader>` key is by default set to `,`;
 
 ### General
 
-| keybinding | description                       | mode   |
-|------------|-----------------------------------|--------|
-| <leader>c  | clear search highlights           | normal |
-| <leader>q  | quit all windows/buffers and exit | normal |
-| <leader>o  | spawn integrated terminal         | normal |
-| <leader>tm | toggle table mode                 | normal |
+| keybinding       | description                       | mode   |
+|------------------|-----------------------------------|--------|
+| &lt;leader&gt;c  | clear search highlights           | normal |
+| &lt;leader&gt;q  | quit all windows/buffers and exit | normal |
+| &lt;leader&gt;o  | spawn integrated terminal         | normal |
+| &lt;leader&gt;tm | toggle table mode                 | normal |
 
 ### Splits
 
-| keybinding   | description                           | mode   |
-|--------------|---------------------------------------|--------|
-| <leader>v    | vertical split                        | normal |
-| <leader>h    | horizontal split                      | normal |
-| Ctrl + h     | move to the left split                | normal |
-| Ctrl + j     | move to the bottom split              | normal |
-| Ctrl + k     | move to the top split                 | normal |
-| Ctrl + l     | move to the right split               | normal |
-| Ctrl + Left  | resize vertical split to the left     | normal |
-| Ctrl + Right | resize vertical split to the right    | normal |
-| Ctrl + Up    | resize horizontal split to the top    | normal |
-| Ctrl + Down  | resize horizontal split to the bottom | normal |
+| keybinding      | description                           | mode   |
+|-----------------|---------------------------------------|--------|
+| &lt;leader&gt;v | vertical split                        | normal |
+| &lt;leader&gt;h | horizontal split                      | normal |
+| Ctrl + h        | move to the left split                | normal |
+| Ctrl + j        | move to the bottom split              | normal |
+| Ctrl + k        | move to the top split                 | normal |
+| Ctrl + l        | move to the right split               | normal |
+| Ctrl + Left     | resize vertical split to the left     | normal |
+| Ctrl + Right    | resize vertical split to the right    | normal |
+| Ctrl + Up       | resize horizontal split to the top    | normal |
+| Ctrl + Down     | resize horizontal split to the bottom | normal |
 
 ### LSP
 
-| keybinding | description                   | mode   |
-|------------|-------------------------------|--------|
-| <leader>gd | go to definition              | normal |
-| <leader>gD | go to declaration             | normal |
-| <leader>gr | find all references           | normal |
-| <leader>gi | go to implementation          | normal |
-| <leader>gh | spawn hover menu              | normal |
-| <leader>gs | display signature information | normal |
-| <leader>gn | Move to next diagnostic       | normal |
-| <leader>gp | Move to previous diagnostic   | normal |
+| keybinding       | description                   | mode   |
+|------------------|-------------------------------|--------|
+| &lt;leader&gt;gd | go to definition              | normal |
+| &lt;leader&gt;gD | go to declaration             | normal |
+| &lt;leader&gt;gr | find all references           | normal |
+| &lt;leader&gt;gi | go to implementation          | normal |
+| &lt;leader&gt;gh | spawn hover menu              | normal |
+| &lt;leader&gt;gs | display signature information | normal |
+| &lt;leader&gt;gn | Move to next diagnostic       | normal |
+| &lt;leader&gt;gp | Move to previous diagnostic   | normal |
 
 ### Completion
 
