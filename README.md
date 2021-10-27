@@ -78,8 +78,8 @@ Default Keybindings. Take note the `<leader>` key is by default set to `,`
 |--------------|-----------------------------|--------|
 | Ctrl + d     | Scroll docs down            | insert |
 | Ctrl + f     | Scroll docs up              | insert |
-| Ctrl + p     | Move to previous completion | insert |
-| Ctrl + n     | Move to next completion     | insert |
+| Ctrl + k     | Move to previous completion | insert |
+| Ctrl + j     | Move to next completion     | insert |
 | Ctrl + Space | Activate completion         | insert |
 | Ctrl + e     | Close completion menu       | insert |
 | Return       | Confirm selection           | insert |

@@ -44,6 +44,7 @@ return require('packer').startup(function(use)
     requires = {'rbgrouleff/bclose.vim'}
   }
   use 'dhruvasagar/vim-table-mode'   -- quickly draw markdown tables
+  use 'preservim/nerdcommenter'      -- quickly comment/uncomment regions
 
   if packer_bootstrap then
     require('packer').sync()
