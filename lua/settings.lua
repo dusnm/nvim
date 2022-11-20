@@ -24,14 +24,14 @@ opt.completeopt = 'menu,menuone,noselect' -- completion options
 -----------
 -- UI/UX --
 -----------
-opt.number = true       -- show line numbers
-opt.showmatch = true    -- highlight matching parenthesis
-opt.colorcolumn = '120' -- put a line length marker at 120 columns
-opt.splitright = true   -- vertical splits spawn to the right
-opt.splitbelow = true   -- horizontal splits spawn to the bottom
-opt.ignorecase = true   -- ignore case when searching
-opt.smartcase = true    -- ignore lowercase for the whole pattern
-opt.linebreak = true    -- wrap on a word boundry, not mid word
+opt.number = true        -- show line numbers
+opt.showmatch = true     -- highlight matching parenthesis
+opt.colorcolumn = '120'  -- put a line length marker at 120 columns
+opt.splitright = true    -- vertical splits spawn to the right
+opt.splitbelow = true    -- horizontal splits spawn to the bottom
+opt.ignorecase = true    -- ignore case when searching
+opt.smartcase = true     -- ignore lowercase for the whole pattern
+opt.linebreak = true     -- wrap on a word boundry, not mid word
 opt.smd = false   	    -- Don't show the current mode, eg. --INSERT--
 
 ------------------------
@@ -55,7 +55,7 @@ cmd [[
 ------------
 opt.termguicolors = true -- enable 24-bit color support
 opt.background = 'dark'  -- set the default colorscheme variant to dark
-cmd [[colorscheme gruvbox]]
+cmd [[ colorscheme material ]]
 
 -------------------------
 -- Integrated Terminal --

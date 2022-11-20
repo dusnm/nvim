@@ -23,15 +23,15 @@ end
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'       -- packer manages itself
-  use 'famiu/feline.nvim'            -- statusline for neovim
+  use {
+     'nvim-lualine/lualine.nvim',    -- statusline for neovim
+      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
   use { 
     'lewis6991/gitsigns.nvim',       -- git integration
     requires = {'nvim-lua/plenary.nvim'}
   }
-  use {
-    'ellisonleao/gruvbox.nvim',
-    requires = {'rktjmp/lush.nvim'}
-  }
+  use 'marko-cerovac/material.nvim'  -- colorscheme
   use 'kyazdani42/nvim-web-devicons' -- icons for the statusline and others
   use 'neovim/nvim-lspconfig'        -- language server configurations
   use 'hrsh7th/nvim-cmp'             -- autocompletion

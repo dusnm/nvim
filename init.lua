@@ -27,20 +27,10 @@ local fn = vim.fn -- execute vim functions
 -- not already installed and
 -- sync all the plugins defined
 -- in its configuration.
+require('settings')
+require('keymaps')
 require('plugins/plugins')
-
--- Once plugins are synced
--- packer drops plugin
--- definitions into this
--- file. At this point the rest
--- of the plugins can be loaded
--- without errors.
-local plugin_compiled_path = fn.stdpath('config')..'/plugin/packer_compiled.lua'
-if fn.empty(fn.glob(plugin_compiled_path)) == 0 then
-  require('settings')
-  require('keymaps')
-  require('plugins/gitsigns')
-  require('plugins/feline')
-  require('plugins/lsp')
-  require('plugins/completions')
-end
+require('plugins/gitsigns')
+require('plugins/lualine')
+require('plugins/lsp')
+require('plugins/completions')

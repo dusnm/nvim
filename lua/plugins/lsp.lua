@@ -10,7 +10,7 @@ default_capabilities
   .completionItem
   .snippetSupport = true
 
-local capabilities = require('cmp_nvim_lsp').update_capabilities(default_capabilities)
+local capabilities = require('cmp_nvim_lsp').default_capabilities(default_capabilities)
 local servers = {
   'tsserver',
   'pyright',
@@ -22,6 +22,7 @@ local servers = {
   'dockerls',
   'yamlls',
   'intelephense',
+  'gopls',
 }
 
 for _, server in ipairs(servers) do
