@@ -19,9 +19,7 @@ local servers = {
   'html',
   'cssls',
   'jsonls',
-  'dockerls',
   'yamlls',
-  'intelephense',
   'gopls',
 }
 

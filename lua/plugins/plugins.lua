@@ -31,7 +31,10 @@ return require('packer').startup(function(use)
     'lewis6991/gitsigns.nvim',       -- git integration
     requires = {'nvim-lua/plenary.nvim'}
   }
-  use 'marko-cerovac/material.nvim'  -- colorscheme
+  use { 
+    "catppuccin/nvim", 
+    as = "catppuccin" 
+  } -- colorscheme
   use 'kyazdani42/nvim-web-devicons' -- icons for the statusline and others
   use 'neovim/nvim-lspconfig'        -- language server configurations
   use 'hrsh7th/nvim-cmp'             -- autocompletion
@@ -39,12 +42,27 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-buffer'           -- autocompletion
   use 'hrsh7th/cmp-vsnip'            -- snippets
   use 'hrsh7th/vim-vsnip'            -- snippets
-  use {
-    'francoiscabrol/ranger.vim',     -- ranger file manager integration
-    requires = {'rbgrouleff/bclose.vim'}
-  }
   use 'dhruvasagar/vim-table-mode'   -- quickly draw markdown tables
   use 'preservim/nerdcommenter'      -- quickly comment/uncomment regions
+  use {
+    'nvim-telescope/telescope.nvim', 
+    tag = '0.1.1',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  } -- a fuzzy finder for neovim
+  use {
+    'nvim-treesitter/nvim-treesitter', 
+    {run = ':TSUpdate'}
+  }
+  use {
+    'darrikonn/vim-gofmt', 
+    { run = ':GoUpdateBinaries' }
+  }
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+  }
 
   if packer_bootstrap then
     require('packer').sync()

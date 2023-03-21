@@ -14,11 +14,12 @@ local opt = vim.opt            -- global/buffer/windows-scoped options
 -------------
 -- General --
 -------------
-g.mapleader = ','	                        -- set leader key
-g.ranger_replace_netrw = 1                -- open ranger when opening a directory
-opt.mouse = 'a'		                        -- enable mouse support
+g.mapleader = ','	                      -- set leader key
+g.loaded_netrw = 1                        -- disable netrw
+g.loaded_netrwPlugin = 1                  -- replace netrw with a different plugin
+opt.mouse = 'a'		                      -- enable mouse support
 opt.clipboard = 'unnamedplus'             -- use the system's clipboard for copy/paste
-opt.swapfile = false	                    -- disable swapfile
+opt.swapfile = false	                  -- disable swapfile
 opt.completeopt = 'menu,menuone,noselect' -- completion options
 
 -----------
@@ -43,7 +44,7 @@ opt.tabstop = 4	       -- 1 tab is 4 spaces
 opt.shiftwidth = 4     -- tabbing indents by 4 spaces
 
 -- remove line lenght marker for selected filetypes
-cmd [[autocmd FileType text,markdown,html,xhtml setlocal cc=0]]
+cmd [[autocmd FileType text,html,xhtml setlocal cc=0]]
 
 -- These file types will use 2 spaces for indentation
 cmd [[ 
@@ -55,7 +56,7 @@ cmd [[
 ------------
 opt.termguicolors = true -- enable 24-bit color support
 opt.background = 'dark'  -- set the default colorscheme variant to dark
-cmd [[ colorscheme material ]]
+cmd [[ colorscheme catppuccin ]]
 
 -------------------------
 -- Integrated Terminal --
@@ -84,7 +85,10 @@ opt.synmaxcol = 240       -- max column for syntax highlight
 ----------------------------------
 -- Automatically center the screen on insert mode
 cmd [[autocmd InsertEnter * norm zz]]
--- Code formatting for PHP
--- cmd [[ autocmd BufWritePost *.php silent! call PhpCsFixerFixFile() ]]
+
+-- Actions on save for go
+cmd [[ autocmd BufWritePost *.go silent! GoFmt ]]     -- Format the code
+cmd [[ autocmd BufWritePost *.go silent! GoImports ]] -- Sanitize import statements
+
 -- Set syntax style of JavaScript to that of TypeScript
 cmd [[autocmd BufRead,BufNewFile *.js set syntax=typescript]]
